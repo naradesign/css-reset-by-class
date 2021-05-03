@@ -4,14 +4,14 @@ body {
     overflow-wrap: break-word;
 }
 
+/* Do not break Korean words */
+:lang(ko) { word-break: keep-all; }
+
 /* Reset img */
 img {
     max-width: 100%;
     height: auto;
 }
-
-/* Do not break Korean words */
-:lang(ko) { word-break: keep-all; }
 
 /* CSS Reset by [class] */
 [class] {
