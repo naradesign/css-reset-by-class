@@ -17,14 +17,14 @@ img {
 [class] {
     margin: 0;
     padding: 0;
-    border: 0;
     box-sizing: border-box;
-    background-color: transparent;
-    border-collapse: collapse;
-    border-spacing: 0;
-    list-style: none;
+    list-style: none; /* ol, ul */
+    border: 0; /* button, fieldset, iframe, input, select, table, textarea */
+    background-color: transparent; /* button, dialog, mark, meter, progress */
+    border-collapse: collapse; /* table */
+    border-spacing: 0; /* table */
     -webkit-appearance: none;
-    appearance: none;
+    appearance: none; /* button, input, meter, progress, select, textarea */
 }
 [class]::before,
 [class]::after { box-sizing: border-box; }
