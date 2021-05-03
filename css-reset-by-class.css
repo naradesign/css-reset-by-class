@@ -1,0 +1,30 @@
+/* Reset body */
+body {
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+/* Reset img */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Do not break Korean words */
+:lang(ko) { word-break: keep-all; }
+
+/* CSS Reset by [class] */
+[class] {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    list-style: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+[class]::before,
+[class]::after { box-sizing: border-box; }
