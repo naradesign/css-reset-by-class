@@ -28,3 +28,25 @@ img {
 }
 [class]::before,
 [class]::after { box-sizing: border-box; }
+
+/* CSS Reset by [class] - Will be used when Samsung Internet supports it.
+[class] {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+[class]::before,
+[class]::after { box-sizing: border-box; }
+[class]:where(ol, ul) { list-style: none; }
+[class]:where(button, fieldset, iframe, input, select, textarea) { border: 0; }
+[class]:where(button, dialog, input, mark, meter, progress) { background-color: transparent; }
+[class]:where(table) {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+[class]:where(button, input, meter, progress, select, textarea) {
+  -webkit-appearance: none;
+  appearance: none;
+}
+*/
