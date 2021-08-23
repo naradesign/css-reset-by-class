@@ -2,12 +2,14 @@
 body {
     margin: 0;
     overflow-wrap: break-word;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 /* Do not break Korean words */
 :lang(ko) { word-break: keep-all; }
 
-/* Reset img */
+/* Reset by Type selectors */
 img {
     max-width: 100%;
     height: auto;
@@ -29,7 +31,7 @@ img {
 [class]::before,
 [class]::after { box-sizing: border-box; }
 
-/* CSS Reset by [class] - Will be used when Samsung Internet supports it.
+/*CSS Reset by [class] - Will be used when Samsung Internet supports it.*/
 [class] {
   margin: 0;
   padding: 0;
@@ -39,6 +41,8 @@ img {
 [class]::after { box-sizing: border-box; }
 [class]:where(ol, ul) { list-style: none; }
 [class]:where(button, fieldset, iframe, input, select, textarea) { border: 0; }
+[class]:where(iframe){overflow: hidden;}
+[class]:where(textarea){resize: vertical;}
 [class]:where(button, dialog, input, mark, meter, progress) { background-color: transparent; }
 [class]:where(table) {
   border: 0;
@@ -49,4 +53,3 @@ img {
   -webkit-appearance: none;
   appearance: none;
 }
-*/
