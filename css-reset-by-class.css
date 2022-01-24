@@ -29,7 +29,7 @@ img {
 [class]::before,
 [class]::after { box-sizing: border-box; }
 
-/* CSS Reset by [class] - Will be used for Samsung Internet supports.
+/* CSS Reset by [class] - where() 선택자를 지원하는 프로젝트에서 아래 코드를 사용할 수 있음.
 [class] {
   margin: 0;
   padding: 0;
