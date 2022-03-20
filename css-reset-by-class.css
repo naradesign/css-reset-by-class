@@ -39,6 +39,7 @@ img {
 [class]::after { box-sizing: border-box; }
 [class]:where(ol, ul) { list-style: none; }
 [class]:where(button, fieldset, iframe, input, select, textarea) { border: 0; }
+[class]:where(textarea) { font-family: inherit; font-size: inherit; }
 [class]:where(button, dialog, input, mark, meter, progress) { background-color: transparent; }
 [class]:where(table) {
   border: 0;
