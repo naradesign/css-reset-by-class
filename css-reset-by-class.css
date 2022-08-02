@@ -29,24 +29,33 @@ img {
 [class]::before,
 [class]::after { box-sizing: border-box; }
 
-/* CSS Reset by [class] - where() 선택자를 지원하는 프로젝트에서 아래 코드를 사용할 수 있음.
-[class] {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* CSS Reset by [class] - where() 선택자를 지원하는 프로젝트에서 사용할 수 있음. 아래 선언한 모든 선택자의 특이성은 '0'.
+:where(body) {
+    margin: 0;
+    overflow-wrap: break-word;
 }
-[class]::before,
-[class]::after { box-sizing: border-box; }
-[class]:where(ol, ul) { list-style: none; }
-[class]:where(button, fieldset, iframe, input, select, textarea) { border: 0; }
-[class]:where(button, dialog, input, mark, meter, progress) { background-color: transparent; }
-[class]:where(table) {
-  border: 0;
-  border-collapse: collapse;
-  border-spacing: 0;
+:where(:lang(ko)) { word-break: keep-all; }
+:where(img) {
+    max-width: 100%;
+    height: auto;
 }
-[class]:where(button, input, meter, progress, select, textarea) {
-  -webkit-appearance: none;
-  appearance: none;
+:where([class]) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:where([class])::before,
+:where([class])::after { box-sizing: border-box; }
+:where(ol[class], ul[class]) { list-style: none; }
+:where(button[class], fieldset[class], iframe[class], input[class], select[class], textarea[class]) { border: 0; }
+:where(button[class], dialog[class], input[class], mark[class], meter[class], progress[class]) { background-color: transparent; }
+:where(table[class]) {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+:where(button[class], input[class], meter[class], progress[class], select[class], textarea[class]) {
+    -webkit-appearance: none;
+    appearance: none;
 }
 */
