@@ -1,4 +1,8 @@
 /* Reset body */
+html,
+body {
+    min-height: 100dvh;
+}
 body {
     margin: 0;
     overflow-wrap: break-word;
@@ -39,6 +43,9 @@ img {
 }
 
 /* CSS Reset by [class] - where() 선택자를 지원하는 프로젝트에서 사용할 수 있음. 아래 선언한 모든 선택자의 특이성은 '0'.
+:where(html, body) {
+    min-height: 100dvh;
+}
 :where(body) {
     margin: 0;
     overflow-wrap: break-word;
