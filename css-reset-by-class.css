@@ -1,31 +1,13 @@
-/* Reset body */
-html,
-body {
-    min-height: 100dvh;
-}
-body {
-    margin: 0;
-    overflow-wrap: break-word;
-}
-
-/* Do not break Korean words */
-:lang(ko) { word-break: keep-all; }
-
-/* Reset img */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Reset [class] */
 :where(html, body) {
     min-height: 100dvh;
+}
+:where(:lang(ko)) {
+    word-break: keep-all;
 }
 :where(body) {
     margin: 0;
     overflow-wrap: break-word;
 }
-:where(:lang(ko)) { word-break: keep-all; }
 :where(img) {
     max-width: 100%;
     height: auto;
