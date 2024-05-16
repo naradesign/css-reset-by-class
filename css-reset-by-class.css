@@ -27,19 +27,12 @@ img {
     background-color: transparent; /* button, dialog, mark, meter, progress */
     border-collapse: collapse; /* table */
     border-spacing: 0; /* table */
-    -webkit-appearance: none;
     appearance: none; /* button, input, meter, progress, select, textarea */
 }
 [class]::before,
 [class]::after { 
     box-sizing: border-box;
     pointer-events: none;
-}
-[hidden] {
-    display: none !important;
-}
-[open] {
-    display: block !important;
 }
 
 /* CSS Reset by [class] - where() 선택자를 지원하는 프로젝트에서 사용할 수 있음. 아래 선언한 모든 선택자의 특이성은 '0'.
@@ -69,18 +62,11 @@ img {
 :where(button[class], fieldset[class], iframe[class], input[class], select[class], textarea[class]) { border: 0; }
 :where(button[class], dialog[class], input[class], mark[class], meter[class], progress[class]) { background-color: transparent; }
 :where(table[class]) {
-    border: 0;
     border-collapse: collapse;
     border-spacing: 0;
+    border: 0;
 }
 :where(button[class], input[class], meter[class], progress[class], select[class], textarea[class]) {
-    -webkit-appearance: none;
     appearance: none;
-}
-:where([hidden]) {
-    display: none !important;
-}
-:where([open]) {
-    display: block !important;
 }
 */
