@@ -17,25 +17,7 @@ img {
     height: auto;
 }
 
-/* CSS Reset by [class] */
-[class] {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none; /* ol, ul */
-    border: 0; /* button, fieldset, iframe, input, select, table, textarea */
-    background-color: transparent; /* button, dialog, mark, meter, progress */
-    border-collapse: collapse; /* table */
-    border-spacing: 0; /* table */
-    appearance: none; /* button, input, meter, progress, select, textarea */
-}
-[class]::before,
-[class]::after { 
-    box-sizing: border-box;
-    pointer-events: none;
-}
-
-/* CSS Reset by [class] - where() 선택자를 지원하는 프로젝트에서 사용할 수 있음. 아래 선언한 모든 선택자의 특이성은 '0'.
+/* Reset [class] */
 :where(html, body) {
     min-height: 100dvh;
 }
@@ -69,4 +51,3 @@ img {
 :where(button[class], input[class], meter[class], progress[class], select[class], textarea[class]) {
     appearance: none;
 }
-*/
