@@ -18,13 +18,19 @@
     box-sizing: border-box;
 }
 :where([class])::before,
-:where([class])::after { 
-    box-sizing: border-box; 
+:where([class])::after {
+    box-sizing: border-box;
     pointer-events: none;
 }
-:where(ol[class], ul[class]) { list-style: none; }
-:where(button[class], fieldset[class], iframe[class], input[class], select[class], textarea[class]) { border: 0; }
-:where(button[class], dialog[class], input[class], mark[class], meter[class], progress[class]) { background-color: transparent; }
+:where(ol[class], ul[class]) {
+    list-style: none;
+}
+:where(button[class], fieldset[class], iframe[class], input[class], select[class], textarea[class]) {
+    border: 0;
+}
+:where(button[class], dialog[class], input[class], mark[class], meter[class], progress[class]) {
+    background-color: transparent;
+}
 :where(table[class]) {
     border-collapse: collapse;
     border-spacing: 0;
