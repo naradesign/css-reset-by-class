@@ -1,41 +1,45 @@
 :where(html, body) {
-    min-height: 100dvh;
+  min-height: 100dvh;
 }
 :where(:lang(ko)) {
-    word-break: keep-all;
+  word-break: keep-all;
 }
 :where(body) {
-    margin: 0;
-    overflow-wrap: break-word;
+  margin: 0;
+  overflow-wrap: break-word;
+  text-size-adjust: none;
 }
 :where(img) {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 :where([class]) {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 :where([class])::before,
 :where([class])::after {
-    box-sizing: border-box;
-    pointer-events: none;
+  box-sizing: border-box;
+  pointer-events: none;
 }
 :where(ol[class], ul[class]) {
-    list-style: none;
+  list-style: none;
 }
 :where(hr[class], button[class], fieldset[class], iframe[class], input[class], select[class], textarea[class]) {
-    border: 0;
+  border: 0;
+}
+:where(input[class], textarea[class]) {
+  border-radius: 0;
 }
 :where(button[class], dialog[class], input[class], mark[class], meter[class], progress[class]) {
-    background-color: transparent;
+  background-color: transparent;
 }
 :where(table[class]) {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
 }
 :where(button[class], input[class], meter[class], progress[class], select[class], textarea[class]) {
-    appearance: none;
+  appearance: none;
 }
